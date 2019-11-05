@@ -1,4 +1,4 @@
-public class Caculator {
+public class Calculator {
 
     public static final char ADDITION = '+';
     public static final char SUBTRACTION = '-';
@@ -21,5 +21,11 @@ public class Caculator {
             default:
                 throw new RuntimeException("Unsupported operation");
         }
+    }
+
+    public static void main(String[] args) {
+        calculate(5,6,ADDITION);
+        System.out.println(calculate(5,6,ADDITION));
+
     }
 }
